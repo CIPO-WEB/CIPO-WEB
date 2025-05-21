@@ -47,7 +47,7 @@ image_dir = "images" # Directory containing your images
 try:
     if os.path.exists(image_dir):
         if os.path.exists(os.path.join(image_dir, "step1.png")):
-            st.image(os.path.join(image_dir, "step1.png"), caption="Step 2a: Enter Username", use_container_width=True)
+            st.image(os.path.join(image_dir, "step1.png"), caption="Step 2a: click Log in with Keycloack", use_container_width=True)
         else:
              st.warning(f"Image 'step1.png' not found in '{image_dir}'.")
         if os.path.exists(os.path.join(image_dir, "step2.png")):
@@ -55,7 +55,7 @@ try:
         else:
              st.warning(f"Image 'step2.png' not found in '{image_dir}'.")
         if os.path.exists(os.path.join(image_dir, "step3.png")):
-            st.image(os.path.join(image_dir, "step3.png"), caption="Step 2c: Complete Authentication", use_container_width=True)
+            st.image(os.path.join(image_dir, "step3.png"), caption="Step 2c: Complete Authentication: ISED employee", use_container_width=True)
         else:
              st.warning(f"Image 'step3.png' not found in '{image_dir}'.")
     else:
