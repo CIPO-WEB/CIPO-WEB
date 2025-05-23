@@ -281,7 +281,7 @@ except Exception as e:
 st.markdown("---") # Separator
 
 # --- Continue CMS Steps Section (Home Page) ---
-st.header("Instructions (Cont.): Applying HTML to CMS - Home Page Alert Box")
+st.header("Instructions: Applying HTML to CMS - Home Page Alert Box")
 st.markdown("Note: Our service interruption message is now published live on the Service and website interruptions page (https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/service-and-website-interruptions). Now, we need to display a short message on the Home page to lead users to this page, if they want to read the full message.")
 
 st.markdown("#### Step 11: Open the CIPO Home page")
@@ -296,7 +296,7 @@ except Exception as e:
     st.error(f"An error occurred while trying to load image step4.png for Step 11: {e}")
 
 st.markdown("#### Step 12: Open Homepage Source Editor")
-st.write("12) Switch the Home page into 'Source' view and find the `<!-- *****************NOTICES****** -->` line. You will paste the Home page code (Alert Box HTML) below that line as explained in Step 14.")
+st.write("12) Switch the Home page into 'Source' view and find the *****************NOTICES****** line. You will paste the Home page code (Alert Box HTML) below that line as explained in Step 14.")
 try:
     # Reusing step5.png as requested
     if os.path.exists(os.path.join(image_dir, "step5.png")):
