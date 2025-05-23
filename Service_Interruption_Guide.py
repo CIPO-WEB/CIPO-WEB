@@ -79,7 +79,7 @@ except Exception as e:
 
 
 st.markdown("#### Step 5: Open Source Editor")
-st.write("5) Click 'Edit' and then 'Source' as shown in the image below:")
+st.write("5) Click 'Source' as shown in the image below:")
 try:
     if os.path.exists(os.path.join(image_dir, "step5.png")):
         st.image(os.path.join(image_dir, "step5.png"), caption="Step 5: Click 'Edit' then 'Source'", use_container_width=True)
@@ -232,7 +232,7 @@ st.markdown("---") # Separator
 st.header("Instructions (Cont.): Applying HTML to CMS - Service Interruption Page")
 
 st.markdown("#### Step 7: Paste Full HTML Message into Service Interruption Page Source")
-st.write("7) Copy the 'English HTML (Full)' and 'French HTML (Full)' code from the sections above. Paste the **English** code into the English version of the Service Interruption page's Source editor, right above the commented line of code `<!-- InstanceBeginEditable name='main' -->`. Please do not modify or delete anything else on the page. Repeat for the **French** code on the French version of the page.")
+st.write("7) Copy the 'English HTML (Full)' and 'French HTML (Full)' code from the sections above. Paste the **English** code into the English version of the Service Interruption page's Source editor, right where the red line indicates above the commented line of code (in yellow). Please do not modify or delete anything else on the page. Repeat for the **French** code on the French version of the page.")
 try:
     if os.path.exists(os.path.join(image_dir, "step6.png")):
         st.image(os.path.join(image_dir, "step6.png"), caption="Step 7: Paste HTML into Service Interruption Page Source Editor", use_container_width=True)
