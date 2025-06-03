@@ -376,7 +376,7 @@ except Exception as e:
 try:
     # Reusing step8.png as requested
     if os.path.exists(os.path.join(image_dir, "final2.png")):
-        st.image(os.path.join(image_dir, "final2.png"), caption="Banner on the CIPO Home page", use_container_width=True)
+        st.image(os.path.join(image_dir, "final2.png"), caption="Full message on the Service and website interruptions page", use_container_width=True)
     else:
          st.warning(f"Image 'final2.png' not found in '{image_dir}'.")
 except Exception as e:
