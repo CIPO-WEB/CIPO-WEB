@@ -306,10 +306,10 @@ st.markdown("#### Step 12: Open Homepage Source Editor")
 st.write("12) Switch the Home page into 'Source' view and find the *****************NOTICES****** line. You will paste the Home page code (Alert Box HTML) below that line as explained in Step 14.")
 try:
     # Reusing step5.png as requested
-    if os.path.exists(os.path.join(image_dir, "step5.png")):
-        st.image(os.path.join(image_dir, "step5.png"), caption="Step 12: Open Homepage Source and Find Comment", use_container_width=True)
+    if os.path.exists(os.path.join(image_dir, "step12.png")):
+        st.image(os.path.join(image_dir, "step12.png"), caption="Step 12: Open Homepage Source and Find Comment", use_container_width=True)
     else:
-         st.warning(f"Image 'step5.png' not found for Step 12.")
+         st.warning(f"Image 'step12.png' not found for Step 12.")
 except Exception as e:
     st.error(f"An error occurred while trying to load image step5.png for Step 12: {e}")
 
@@ -346,7 +346,7 @@ except Exception as e:
 
 st.markdown("#### Step 16: Review Home page Draft")
 st.write("16) Click 'Save (this translation)' and you will be able to review the Draft version of the page. Please note that you also need to review the French version of the page.")
-st.markdown("Note: if you need to make changes to the Draft version, go back to Step 11.") # Updated note to point to Step 11
+st.markdown("If you need to make changes to the Draft version, go back to Step 11.") # Updated note to point to Step 11
 
 st.markdown("#### Step 17: Publish the Home page Alert")
 st.write("17) Once satisfied with the message on the Home page and after having reviewed both versions (ENG-FRA), click 'Edit', scroll down, and 'Save as Published' to publish the message live.")
@@ -367,20 +367,20 @@ st.markdown("#### Final results")
 st.write("After publishing the complete message on the Service and website interruptions page and the banner on the CIPO Home page, everything should look like this:")
 try:
     # Reusing step8.png as requested
-    if os.path.exists(os.path.join(image_dir, "step12.png")):
-        st.image(os.path.join(image_dir, "step12"), caption="Banner on the CIPO Home page", use_container_width=True)
+    if os.path.exists(os.path.join(image_dir, "final1.png")):
+        st.image(os.path.join(image_dir, "final1.png"), caption="Banner on the CIPO Home page", use_container_width=True)
     else:
-         st.warning(f"Image 'step12' not found in '{image_dir}'.")
+         st.warning(f"Image 'final1.png' not found in '{image_dir}'.")
 except Exception as e:
     st.error(f"An error occurred while trying to load image step12: {e}")
 try:
     # Reusing step8.png as requested
-    if os.path.exists(os.path.join(image_dir, "step13.png")):
-        st.image(os.path.join(image_dir, "step13"), caption="Banner on the CIPO Home page", use_container_width=True)
+    if os.path.exists(os.path.join(image_dir, "final2.png")):
+        st.image(os.path.join(image_dir, "final2.png"), caption="Banner on the CIPO Home page", use_container_width=True)
     else:
-         st.warning(f"Image 'step13' not found in '{image_dir}'.")
+         st.warning(f"Image 'final2.png' not found in '{image_dir}'.")
 except Exception as e:
-    st.error(f"An error occurred while trying to load image step13: {e}")
+    st.error(f"An error occurred while trying to load image final2.png: {e}")
 
 
 # --- Utility Section ---
