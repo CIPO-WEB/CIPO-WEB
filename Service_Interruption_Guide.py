@@ -367,20 +367,20 @@ st.markdown("#### Final results")
 st.write("After publishing the complete message on the Service and website interruptions page and the banner on the CIPO Home page, everything should look like this:")
 try:
     # Reusing step8.png as requested
-    if os.path.exists(os.path.join(image_dir, "step11-1.png")):
-        st.image(os.path.join(image_dir, "step11-1"), caption="Banner on the CIPO Home page", use_container_width=True)
+    if os.path.exists(os.path.join(image_dir, "step12.png")):
+        st.image(os.path.join(image_dir, "step12"), caption="Banner on the CIPO Home page", use_container_width=True)
     else:
-         st.warning(f"Image 'step11-1' not found in '{image_dir}'.")
+         st.warning(f"Image 'step12' not found in '{image_dir}'.")
 except Exception as e:
-    st.error(f"An error occurred while trying to load image step11-1: {e}")
+    st.error(f"An error occurred while trying to load image step12: {e}")
 try:
     # Reusing step8.png as requested
-    if os.path.exists(os.path.join(image_dir, "step11-2.png")):
-        st.image(os.path.join(image_dir, "step11-2"), caption="Banner on the CIPO Home page", use_container_width=True)
+    if os.path.exists(os.path.join(image_dir, "step13.png")):
+        st.image(os.path.join(image_dir, "step13"), caption="Banner on the CIPO Home page", use_container_width=True)
     else:
-         st.warning(f"Image 'step11-2' not found in '{image_dir}'.")
+         st.warning(f"Image 'step13' not found in '{image_dir}'.")
 except Exception as e:
-    st.error(f"An error occurred while trying to load image step11-2: {e}")
+    st.error(f"An error occurred while trying to load image step13: {e}")
 
 
 # --- Utility Section ---
