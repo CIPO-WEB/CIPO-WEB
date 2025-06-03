@@ -67,7 +67,7 @@ st.markdown("#### Step 3: Open the Service Interruption Page")
 st.write("3) Once logged in, open the service and website interruptions page:")
 st.markdown("https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/service-and-website-interruptions")
 
-st.markdown("#### Step 4: Confirm Login")
+st.markdown("#### Step 4: Confirm Login and go into Edit mode")
 st.write("4) Confirm that you are logged in. If you cannot see the 'Edit' button at the top of the page, repeat steps 1 to 3.")
 try:
     if os.path.exists(os.path.join(image_dir, "step4.png")):
@@ -88,7 +88,7 @@ try:
 except Exception as e:
     st.error(f"An error occurred while trying to load image step5.png: {e}")
 
-st.markdown("#### Step 6: Create Your Message using the Tool") # Changed from Generator to Tool
+st.markdown("#### Step 6: Create Your Message using the tool below") # Changed from Generator to Tool
 st.write("6) Create your message using the tools below. Once you have generated the HTML code (English and French) in the 'Generate and Copy HTML Output' section, proceed to Step 7.")
 
 st.markdown("---") # Separator
@@ -266,7 +266,14 @@ except Exception as e:
 
 st.markdown("#### Step 9: Review Service Interruption Page Draft")
 st.write("9) Click 'Save (this translation)' and you will be able to review the Draft version of the page. Please note that you also need to review the French version of the page.")
-st.markdown("Note: if you need to make changes to the Draft version, go back to Step 4.")
+st.markdown("If you need to make changes to the Draft version, go back to Step 4. To share the Draft page for an approval or review, copy the draft URL as indicated in the screenshot below: ")
+try:
+    if os.path.exists(os.path.join(image_dir, "step9-1.png")):
+        st.image(os.path.join(image_dir, "step9-1.png"), caption="Copy Draft URL to share page", use_container_width=True)
+    else:
+         st.warning(f"Image 'step9-1.png' not found in '{image_dir}'.")
+except Exception as e:
+    st.error(f"An error occurred while trying to load image step9-1.png: {e}")
 
 st.markdown("#### Step 10: Publish the Full Message")
 st.write("10) Once satisfied with the message on the Service Interruption page and after having reviewed both versions (ENG-FRA), click 'Edit', scroll down, and 'Save as Published' to publish the full message live.")
@@ -282,7 +289,7 @@ st.markdown("---") # Separator
 
 # --- Continue CMS Steps Section (Home Page) ---
 st.header("Instructions: Applying HTML to CMS - Home Page Alert Box")
-st.markdown("Note: Our service interruption message is now published live on the Service and website interruptions page (https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/service-and-website-interruptions). Now, we need to display a short message on the Home page to lead users to this page, if they want to read the full message.")
+st.markdown("Our service interruption message is now published live on the Service and website interruptions page (https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/service-and-website-interruptions). Now, we need to display a banner message on the Home page to lead users to the full message. The following steps will guide you through publishing this banner on the CIPO Home page. Steps are similar to the previous but detailed below, please follow all steps.")
 
 st.markdown("#### Step 11: Open the CIPO Home page")
 st.write("11) Open the CIPO Home page (https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en) and head into Edit mode.")
@@ -352,10 +359,28 @@ try:
 except Exception as e:
     st.error(f"An error occurred while trying to load image step8.png for Step 17: {e}")
 
-st.markdown("Note: The message on the Home page is now live, this short message has a direct link to the full version of the service interruption message.")
+st.markdown("The message on the Home page is now live, this short message has a direct link to the full version of the service interruption message.")
 
 
 st.markdown("---") # Separator
+st.markdown("#### Final results")
+st.write("After publishing the complete message on the Service and website interruptions page and the banner on the CIPO Home page, everything should look like this:")
+try:
+    # Reusing step8.png as requested
+    if os.path.exists(os.path.join(image_dir, "step11-1.png")):
+        st.image(os.path.join(image_dir, "step11-1"), caption="Banner on the CIPO Home page", use_container_width=True)
+    else:
+         st.warning(f"Image 'step11-1' not found in '{image_dir}'.")
+except Exception as e:
+    st.error(f"An error occurred while trying to load image step11-1: {e}")
+try:
+    # Reusing step8.png as requested
+    if os.path.exists(os.path.join(image_dir, "step11-2.png")):
+        st.image(os.path.join(image_dir, "step11-2"), caption="Banner on the CIPO Home page", use_container_width=True)
+    else:
+         st.warning(f"Image 'step11-2' not found in '{image_dir}'.")
+except Exception as e:
+    st.error(f"An error occurred while trying to load image step11-2: {e}")
 
 
 # --- Utility Section ---
